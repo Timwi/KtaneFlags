@@ -1,0 +1,290 @@
+[
+	{
+		"CountryName": "Algeria",
+		"Continent": "North Africa",
+		"Capital": "Algiers",
+		"Currency": "DZD",
+		"CountryISO": "DZA",
+		"CountryCode": 213
+	},
+	{
+		"CountryName": "Australia",
+		"Continent": "Oceania",
+		"Capital": "Canberra",
+		"Currency": "AUD",
+		"CountryISO": "AUS",
+		"CountryCode": 61
+	},
+	{
+		"CountryName": "Austria",
+		"Continent": "Europe",
+		"Capital": "Vienna",
+		"Currency": "EUR",
+		"CountryISO": "AUT",
+		"CountryCode": 43
+	},
+	{
+		"CountryName": "Belgium",
+		"Continent": "Europe",
+		"Capital": "Brussels",
+		"Currency": "EUR",
+		"CountryISO": "BEL",
+		"CountryCode": 32
+	},
+	{
+		"CountryName": "Brazil",
+		"Continent": "South America",
+		"Capital": "Brasília",
+		"Currency": "BRL",
+		"CountryISO": "BRA",
+		"CountryCode": 55
+	},
+	{
+		"CountryName": "Canada",
+		"Continent": "North America",
+		"Capital": "Ottawa",
+		"Currency": "CAD",
+		"CountryISO": "CAN",
+		"CountryCode": 1
+	},
+	{
+		"CountryName": "Chile",
+		"Continent": "South America",
+		"Capital": "Santiago",
+		"Currency": "CLP",
+		"CountryISO": "CHL",
+		"CountryCode": 56
+	},
+	{
+		"CountryName": "China",
+		"Continent": "East Asia",
+		"Capital": "Beijing",
+		"Currency": "CNY",
+		"CountryISO": "CHN",
+		"CountryCode": 86
+	},
+	{
+		"CountryName": "Colombia",
+		"Continent": "South America",
+		"Capital": "Bogotá",
+		"Currency": "COP",
+		"CountryISO": "COL",
+		"CountryCode": 57
+	},
+	{
+		"CountryName": "Cuba",
+		"Continent": "South America",
+		"Capital": "Havana",
+		"Currency": "CUP",
+		"CountryISO": "CUB",
+		"CountryCode": 53
+	},
+	{
+		"CountryName": "Czech Republic",
+		"Continent": "Europe",
+		"Capital": "Prague",
+		"Currency": "CZK",
+		"CountryISO": "CZE",
+		"CountryCode": 420
+	},
+	{
+		"CountryName": "Denmark",
+		"Continent": "Europe",
+		"Capital": "Copenhagen",
+		"Currency": "DKK",
+		"CountryISO": "DNK",
+		"CountryCode": 45
+	},
+	{
+		"CountryName": "Finland",
+		"Continent": "Europe",
+		"Capital": "Helsinki",
+		"Currency": "EUR",
+		"CountryISO": "FIN",
+		"CountryCode": 358
+	},
+	{
+		"CountryName": "France",
+		"Continent": "Europe",
+		"Capital": "Paris",
+		"Currency": "EUR",
+		"CountryISO": "FRA",
+		"CountryCode": 33
+	},
+	{
+		"CountryName": "Germany",
+		"Continent": "Europe",
+		"Capital": "Berlin",
+		"Currency": "EUR",
+		"CountryISO": "DEU",
+		"CountryCode": 49
+	},
+	{
+		"CountryName": "Greenland",
+		"Continent": "North America",
+		"Capital": "Nuuk",
+		"Currency": "DKK",
+		"CountryISO": "GRL",
+		"CountryCode": 299
+	},
+		{
+		"CountryName": "Iceland",
+		"Continent": "Europe",
+		"Capital": "Reykjavík",
+		"Currency": "ISK",
+		"CountryISO": "ISL",
+		"CountryCode": 354
+	},
+	{
+		"CountryName": "India",
+		"Continent": "South Asia",
+		"Capital": "New Delhi",
+		"Currency": "INR",
+		"CountryISO": "IND",
+		"CountryCode": 91
+	},
+	{
+		"CountryName": "Japan",
+		"Continent": "East Asia",
+		"Capital": "Tokyo",
+		"Currency": "JPY",
+		"CountryISO": "JPN",
+		"CountryCode": 81
+	},
+	{
+		"CountryName": "Mexico",
+		"Continent": "North America",
+		"Capital": "Mexico City",
+		"Currency": "MXN",
+		"CountryISO": "MEX",
+		"CountryCode": 52
+	},
+	{
+		"CountryName": "Morocco",
+		"Continent": "North Africa",
+		"Capital": "Rabat",
+		"Currency": "MAD",
+		"CountryISO": "MAR",
+		"CountryCode": 212
+	},
+	{
+		"CountryName": "Netherlands",
+		"Continent": "Europe",
+		"Capital": "Amsterdam",
+		"Currency": "EUR",
+		"CountryISO": "NLD",
+		"CountryCode": 31
+	},
+	{
+		"CountryName": "New Zealand",
+		"Continent": "Oceania",
+		"Capital": "Wellington",
+		"Currency": "NZD",
+		"CountryISO": "NZL",
+		"CountryCode": 64
+	},
+	{
+		"CountryName": "Norway",
+		"Continent": "Europe",
+		"Capital": "Oslo",
+		"Currency": "NOK",
+		"CountryISO": "NOR",
+		"CountryCode": 47
+	},
+	{
+		"CountryName": "Panama",
+		"Continent": "Central America",
+		"Capital": "Panama City",
+		"Currency": "PAB",
+		"CountryISO": "PAN",
+		"CountryCode": 507
+	},
+	{
+		"CountryName": "Peru",
+		"Continent": "South America",
+		"Capital": "Lima",
+		"Currency": "PEN",
+		"CountryISO": "PER",
+		"CountryCode": 51
+	},
+	{
+		"CountryName": "Poland",
+		"Continent": "Europe",
+		"Capital": "Warsaw",
+		"Currency": "PLN",
+		"CountryISO": "POL",
+		"CountryCode": 48
+	},
+	{
+		"CountryName": "Samoa",
+		"Continent": "Oceania",
+		"Capital": "Apia",
+		"Currency": "WST",
+		"CountryISO": "WSM",
+		"CountryCode": 685
+	},
+	{
+		"CountryName": "Senegal",
+		"Continent": "West Africa",
+		"Capital": "Dakar",
+		"Currency": "XOF",
+		"CountryISO": "SEN",
+		"CountryCode": 221
+	},
+	{
+		"CountryName": "South Korea",
+		"Continent": "East Asia",
+		"Capital": "Seoul",
+		"Currency": "KRW",
+		"CountryISO": "KOR",
+		"CountryCode": 82
+	},
+	{
+		"CountryName": "Spain",
+		"Continent": "Europe",
+		"Capital": "Madrid",
+		"Currency": "EUR",
+		"CountryISO": "ESP",
+		"CountryCode": 34
+	},
+	{
+		"CountryName": "Sudan",
+		"Continent": "North Africa",
+		"Capital": "Khartoum",
+		"Currency": "SDG",
+		"CountryISO": "SDN",
+		"CountryCode": 249
+	},
+	{
+		"CountryName": "Sweden",
+		"Continent": "Europe",
+		"Capital": "Stockholm",
+		"Currency": "SEK",
+		"CountryISO": "SWE",
+		"CountryCode": 46
+	},
+	{
+		"CountryName": "Thailand",
+		"Continent": "Southeast Asia",
+		"Capital": "Bangkok",
+		"Currency": "THB",
+		"CountryISO": "THA",
+		"CountryCode": 66
+	},
+	{
+		"CountryName": "United Kingdom",
+		"Continent": "Europe",
+		"Capital": "London",
+		"Currency": "GBP",
+		"CountryISO": "GBR",
+		"CountryCode": 44
+	},
+	{
+		"CountryName": "United States",
+		"Continent": "North America",
+		"Capital": "Washington, D.C.",
+		"Currency": "USD",
+		"CountryISO": "USA",
+		"CountryCode": 1
+	}
+]
