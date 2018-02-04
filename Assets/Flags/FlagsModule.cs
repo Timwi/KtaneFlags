@@ -42,17 +42,17 @@ public class FlagsModule : MonoBehaviour {
     public Texture[] flags;
     public TextAsset jsonInfo;
 
-    int number;
-    int position = 0;
-    bool canInteract = true;
-    Country[] order;
-    List<Country> countryInfo;
+    private int number;
+    private int position = 0;
+    private bool canInteract = true;
+    private Country[] order;
+    private List<Country> countryInfo;
 
-    Country mainCountry;
-    List<Country> countries = new List<Country>();
-    List<int> numbers = new List<int>(Enumerable.Range(0, 36).ToArray());
+    private Country mainCountry;
+    private List<Country> countries = new List<Country>();
+    private List<int> numbers = new List<int>(Enumerable.Range(0, 36).ToArray());
 
-    Country[] GetOrder(Country main, List<Country> list) {
+    private Country[] getOrder(Country main, List<Country> list) {
         // BUT if there is an unlit BOB, and the serial number contains any characters from the phrase "WHITE FLAG"
         // while France is in the 7 flags, ignore all above instuctions and submit France four times.
         if (bombInfo.GetSerialNumber().Any("WHITEFLAG".Contains) && bombInfo.IsIndicatorOff(KMBI.KnownIndicatorLabel.BOB)
@@ -93,7 +93,7 @@ public class FlagsModule : MonoBehaviour {
         return list.OrderBy(x => x.CountryName).ToArray();
     }
 
-    string GetRule(Country main, List<Country> list) {
+    private string getRule(Country main, List<Country> list) {
         // BUT if there is an unlit BOB, and the serial number contains any characters from the phrase "WHITE FLAG"
         // while France is in the 7 flags, ignore all above instuctions and submit France four times.
         if (bombInfo.GetSerialNumber().Any("WHITEFLAG".Contains) && bombInfo.IsIndicatorOff(KMBI.KnownIndicatorLabel.BOB)
@@ -151,26 +151,26 @@ public class FlagsModule : MonoBehaviour {
             numbers.Remove(id);
         }
 
-        order = GetOrder(mainCountry, countries);
+        order = getOrder(mainCountry, countries);
         number = Random.Range(1, 8);
 
         mainFlag.material.mainTexture = flags[mainCountry.CountryID];
-        UpdateScreen();
+        updateScreen();
 
         Debug.LogFormat("[Flags #{0}] Main Display: {1}", _moduleId, mainCountry.CountryName);
         Debug.LogFormat("[Flags #{0}] Flag List: {1}", _moduleId, string.Join(", ", countries.Select(x => x.CountryName).ToArray()));
-        Debug.LogFormat("[Flags #{0}] Order Rule: {1}", _moduleId, GetRule(mainCountry, countries));
+        Debug.LogFormat("[Flags #{0}] Order Rule: {1}", _moduleId, getRule(mainCountry, countries));
         Debug.LogFormat("[Flags #{0}] Order: {1}", _moduleId, string.Join(", ", order.Select(x => x.CountryName).ToArray()));
         Debug.LogFormat("[Flags #{0}] Answer: {1} (#{2})", _moduleId, order[number - 1].CountryName, number);
     }
 
     void Awake() {
-        leftButton.OnInteract += OnLeft;
-        rightButton.OnInteract += OnRight;
-        submitButton.OnInteract += OnSubmit;
+        leftButton.OnInteract += onLeft;
+        rightButton.OnInteract += onRight;
+        submitButton.OnInteract += onSubmit;
     }
 
-    void UpdateScreen() {
+    private void updateScreen() {
         for (int i = 0; i < 7; i++)
             scrollDots[i].material = dotsMaterial[0];
         scrollDots[position].material = dotsMaterial[1];
@@ -189,7 +189,7 @@ public class FlagsModule : MonoBehaviour {
             choiceFlags[i].material.mainTexture = flags[countries[positions[i]].CountryID];
     }
 
-    bool OnLeft() {
+    private bool onLeft() {
         sound.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, leftButton.transform);
         leftButton.AddInteractionPunch(0.5f);
 
@@ -197,12 +197,12 @@ public class FlagsModule : MonoBehaviour {
             return false;
 
         position = position == 0 ? 6 : position - 1;
-        UpdateScreen();
+        updateScreen();
 
         return false;
     }
     	
-    bool OnRight() {
+    private bool onRight() {
         sound.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, rightButton.transform);
         leftButton.AddInteractionPunch(0.5f);
 
@@ -210,12 +210,12 @@ public class FlagsModule : MonoBehaviour {
             return false;
 
         position = position == 6 ? 0 : position + 1;
-        UpdateScreen();
+        updateScreen();
 
         return false;
     }
 
-    bool OnSubmit() {
+    private bool onSubmit() {
         sound.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, submitButton.transform);
         submitButton.AddInteractionPunch(0.5f);
 
@@ -245,55 +245,60 @@ public class FlagsModule : MonoBehaviour {
         return false;
     }
 
-    public string TwitchHelpMessage = "Cycle the flags with !{0} cycle. Move using !{0} left/right." + 
-        "Set to index 3 with !{0} set 3. Submit the current flag with !{0} submit.";
+    #pragma warning disable 414
+    private string TwitchHelpMessage = "Cycle the flags with !{0} cycle. Move using !{0} left/right. " + 
+        "Set to index 3 with !{0} set 3. Set to Canada with !{0} set Canada. Submit the current flag with !{0} submit. " +
+        "Submit Canada with !{0} submit Canada.";
+    #pragma warning restore 414
 
-    IEnumerator ProcessTwitchCommand(string command) {
+    private IEnumerator ProcessTwitchCommand(string command) {
         command = command.ToUpperInvariant().Trim();
 
         if (command == "SUBMIT") {
-            OnSubmit();
+            onSubmit();
             yield return null;
         }
         
         else if (command == "LEFT") {
-            OnLeft();
+            onLeft();
             yield return null;
         }
         
         else if (command == "RIGHT") {
-            OnRight();
+            onRight();
             yield return null;
         }
         
         else if (command == "CYCLE")
             for (int i = 0; i < 7; i++) {
                 yield return new WaitForSeconds(0.75f);
-                OnRight();
+                onRight();
                 yield return new WaitForSeconds(0.75f);
             }
 
-        else if (command.Substring(0, 4) == "SET " || command.Substring(0, 7) == "SUBMIT ") {
+        else if (command.Length > 4 && command.Substring(0, 4) == "SET " || command.Length > 7 && command.Substring(0, 7) == "SUBMIT ") {
             string args = command[1] == 'E' ? command.Substring(4) : command.Substring(7);
 
             if (args.Length == 1 && "1234567".Contains(args)) {
                 int target = int.Parse(args);
 
                 while (target != position + 1) {
-                    OnRight();
+                    onRight();
                     yield return new WaitForSeconds(0.1f);
                 }
             }
             
-            else if (countries.Find(x => x.CountryName.ToUpperInvariant() == args) != null) {
-                while (countries[position].CountryName.ToUpperInvariant() != args) {
-                    OnRight();
+            else if (countryInfo.Find(x => x.CountryName.ToUpperInvariant() == args) != null) {
+                int cycle = 0;
+
+                while (countries[position].CountryName.ToUpperInvariant() != args && cycle++ < 7) {
+                    onRight();
                     yield return new WaitForSeconds(0.1f);
                 }
             }
 
             if (command[1] == 'U')
-                OnSubmit();
+                onSubmit();
         }
     }
 }

@@ -16,6 +16,6 @@ MonoBehaviour:
   description: "I hope you're good at geography because this is a flag quiz that doesn't
     make any sense!\n\nID: FlagsModule\r\n\r\nGitHub: https://github.com/Piggered/ktane-flags\n\r\nHTML
     Manual: https://ktane.timwi.de/HTML/Flags.html\nPDF Manual: https://ktane.timwi.de/PDF/Flags.pdf"
-  version: 1.0.3
+  version: 1.0.4
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 09b8f69a32e88c54180d78d49ed05fbc, type: 3}
