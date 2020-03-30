@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Insane Talk — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        table {
+            margin: 1em auto;
+        }
+    </style>
+</head>
+ <body>
+        <div id="ManualContent">
+            <div class="section">
+                <div class="page page-bg-01">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">KTaNE Mod, wersja PL, tłumaczenie: gaddemytx</span>
+                        <span class="page-header-section-title">Flagi</span>
+                    </div>
+                    <div class="page-content">
+                        <img src="img/Flags.svg" class="diagram">
+                        <h2>Odnośnie Flag</h2>
+                        <p class="flavour-text">Mam nadzieję, że jesteś dobry z geografii, bo inaczej ten quiz nie ma sensu!</p>
+                        <p>Ten moduł składa się z wyświetlacza z główną flagą, ekranu z 7 flagami, które można zmieniać używając lewego i prawego przycisku oraz z ekraniku wyświetlającego numer pomiędzy 1 a 7.</p>
+                        <p>Zatwierdzenie złej flagi skutkuje odnotowaniem pomyłki. Zatwierdzenie poprawnej flagi unieszkodliwi moduł.</p>
+                        <p>Zacznij od posortowania 7 flag używając pierwszej zasady, która spełnia wymagania:</p>
+                        <ul>
+                        	<li>Jeśli główne państwo znajduje się w Ameryce Północnej oraz nie świeci się żaden wskaźnik na bombie, to ułóż 7 flag alfabetycznie według nazwy państwa.</li>
+                        	<li>W przeciwnym razie, jeśli numer kierunkowy głównego państwa jest większy od 100 oraz na bombie znajduje się port RJ-45, to ułóż 7 flag rosnąco według numerów kierunkowych.</li>
+                        	<li>W przeciwnym razie, jeśli nazwa głównego państwa zawiera ostatnią literę waluty tego państwa, to ułóż 7 flag alfabetycznie według ich kodu ISO.</li>
+                        	<li>W przeciwnym razie, jeśli stolica głównego państwa ma więcej niż 9 liter, to ułóż 7 flag alfabetycznie według ich stolic.</li>
+                        	<li>W przeciwnym razie, jeśli główne państwo leży w Europie, a jego walutą nie jest EUR, to ułóż 7 flag alfabetycznie według ich kontynentów.</li>
+                        	<li>W przeciwnym razie, jeśli pośród 7 flag znajduje się państwo, które leży na tym samym kontynencie co państwo główne, to ułóż 7 flag alfabetycznie według ich waluty.</li>
+                        	<li>W przeciwnym razie, ułóż 7 flag alfabetycznie według nazwy państwa.</li>
+                        </ul>
+                        <p>Jeśli znajdują się flagi, które posiadają taką samą informację, to wybierając między nimi, ułóż je alfabetycznie według nazwy państwa.</p>
+                        <p>W prawym górnym rogu wyświetlana jest cyfra. Po ułożeniu 7 flag, zatwierdź flagę na pozycji odpowiadającej cyfrze w prawym górnym rogu.</p>
+                        <p><b><u>ALE</u></b> jeśli na bombie znajduje się wskaźnik BOB, który się nie świeci oraz numer seryjny zawiera jakąkolwiek z tych liter "WHITEFLAG" oraz jeśli pośród 7 flag znajduje się flaga Francji, to zignoruj wszystkie powyższe instrukcje i zatwierdź flagę Francji.</p>
+                        <p>Użyj tabeli na kolejnych stronach, aby uzyskać informacje o flagach i państwach.</p>
+                    </div>
+                   <div class="page-footer relative-footer">Strona 1 z 3</div>
+                </div>
+                <div class="page page-bg-02">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">KTaNE Mod, wersja PL, tłumaczenie: gaddemytx</span>
+                        <span class="page-header-section-title">Flagi</span>
+                    </div>
+                    <div class="page-content">
+                        <table style="font-size:82%; width: 100%">
+                            <tbody>
+                                <tr style="text-align: center;">
+                                    <td style="width:10%"><strong>Flaga</strong></td>
+                                    <td style="width:20%"><strong>Państwo</strong></td>
+                                    <td style="width:20%"><strong>Kontynent</strong></td>
+                                    <td style="width:20%"><strong>Stolica</strong></td>
+                                    <td style="width:10%"><strong>Waluta</strong></td>
+                                    <td style="width:10%"><strong>Kod ISO</strong></td>
+                                    <td style="width:10%"><strong>Numer kierunkowy</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Algeria.png"></td>
+                                    <td>Algieria</td>
+                                    <td>Afryka</td>
+                                    <td>Algier</td>
+                                    <td>DZD</td>
+                                    <td>DZA</td>
+                                    <td>+213</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Australia.png"></td>
+                                    <td>Australia</td>
+                                    <td>Australia i Oceania</td>
+                                    <td>Canberra</td>
+                                    <td>AUD</td>
+                                    <td>AUS</td>
+                                    <td>+61</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Austria.png"></td>
+                                    <td>Austria</td>
+                                    <td>Europa</td>
+                                    <td>Wiedeń</td>
+                                    <td>EUR</td>
+                                    <td>AUT</td>
+                                    <td>+43</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Belgium.png"></td>
+                                    <td>Belgia</td>
+                                    <td>Europa</td>
+                                    <td>Bruksela</td>
+                                    <td>EUR</td>
+                                    <td>BEL</td>
+                                    <td>+32</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Brazil.png"></td>
+                                    <td>Brazylia</td>
+                                    <td>Ameryka Południowa</td>
+                                    <td>Brasília</td>
+                                    <td>BRL</td>
+                                    <td>BRA</td>
+                                    <td>+55</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Chile.png"></td>
+                                    <td>Chile</td>
+                                    <td>Ameryka Południowa</td>
+                                    <td>Santiago</td>
+                                    <td>CLP</td>
+                                    <td>CHL</td>
+                                    <td>+56</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/China.png"></td>
+                                    <td>Chiny</td>
+                                    <td>Azja</td>
+                                    <td>Pekin</td>
+                                    <td>CNY</td>
+                                    <td>CHN</td>
+                                    <td>+86</td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/Czech_Republic.png"></td>
+                                    <td>Czechy</td>
+                                    <td>Europa</td>
+                                    <td>Praga</td>
+                                    <td>CZK</td>
+                                    <td>CZE</td>
+                                    <td>+420</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Denmark.png"></td>
+                                    <td>Dania</td>
+                                    <td>Europa</td>
+                                    <td>Kopenhaga</td>
+                                    <td>DKK</td>
+                                    <td>DNK</td>
+                                    <td>+45</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Finland.png"></td>
+                                    <td>Finlandia</td>
+                                    <td>Europa</td>
+                                    <td>Helsinki</td>
+                                    <td>EUR</td>
+                                    <td>FIN</td>
+                                    <td>+358</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/France.png"></td>
+                                    <td>Francja</td>
+                                    <td>Europa</td>
+                                    <td>Paryż</td>
+                                    <td>EUR</td>
+                                    <td>FRA</td>
+                                    <td>+33</td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/Greenland.png"></td>
+                                    <td>Grenlandia</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Nuuk</td>
+                                    <td>DKK</td>
+                                    <td>GRL</td>
+                                    <td>+299</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Spain.png"></td>
+                                    <td>Hiszpania</td>
+                                    <td>Europa</td>
+                                    <td>Madryt</td>
+                                    <td>EUR</td>
+                                    <td>ESP</td>
+                                    <td>+34</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Netherlands.png"></td>
+                                    <td>Holandia</td>
+                                    <td>Europa</td>
+                                    <td>Amsterdam</td>
+                                    <td>EUR</td>
+                                    <td>NLD</td>
+                                    <td>+31</td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/India.png"></td>
+                                    <td>Indie</td>
+                                    <td>Azja</td>
+                                    <td>Nowe Delhi</td>
+                                    <td>INR</td>
+                                    <td>IND</td>
+                                    <td>+91</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Iceland.png"></td>
+                                    <td>Islandia</td>
+                                    <td>Europa</td>
+                                    <td>Reykjavík</td>
+                                    <td>ISK</td>
+                                    <td>ISL</td>
+                                    <td>+354</td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/Japan.png"></td>
+                                    <td>Japonia</td>
+                                    <td>Azja</td>
+                                    <td>Tokio</td>
+                                    <td>JPY</td>
+                                    <td>JPN</td>
+                                    <td>+81</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Canada.png"></td>
+                                    <td>Kanada</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Ottawa</td>
+                                    <td>CAD</td>
+                                    <td>CAN</td>
+                                    <td>+1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   <div class="page-footer relative-footer">Strona 2 z 3</div>
+                </div>
+                <div class="page page-bg-03">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">KTaNE Mod, wersja PL, tłumaczenie: gaddemytx</span>
+                        <span class="page-header-section-title">Flagi</span>
+                    </div>
+                    <div class="page-content">
+                        <table style="font-size:82%; width:100%">
+                            <tbody>
+                                <tr style="text-align: center;">
+                                    <td style="width:10%"><strong>Flaga</strong></td>
+                                    <td style="width:20%"><strong>Państwo</strong></td>
+                                    <td style="width:20%"><strong>Kontynent</strong></td>
+                                    <td style="width:20%"><strong>Stolica</strong></td>
+                                    <td style="width:10%"><strong>Waluta</strong></td>
+                                    <td style="width:10%"><strong>Kod ISO</strong></td>
+                                    <td style="width:10%"><strong>Numer kierunkowy</strong></td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/Colombia.png"></td>
+                                    <td>Kolumbia</td>
+                                    <td>Ameryka Południowa</td>
+                                    <td>Bogota</td>
+                                    <td>COP</td>
+                                    <td>COL</td>
+                                    <td>+57</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/South_Korea.png"></td>
+                                    <td>Korea Południowa</td>
+                                    <td>Azja</td>
+                                    <td>Seul</td>
+                                    <td>KRW</td>
+                                    <td>KOR</td>
+                                    <td>+82</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Cuba.png"></td>
+                                    <td>Kuba</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Hawana</td>
+                                    <td>CUP</td>
+                                    <td>CUB</td>
+                                    <td>+53</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Morocco.png"></td>
+                                    <td>Maroko</td>
+                                    <td>Afryka</td>
+                                    <td>Rabat</td>
+                                    <td>MAD</td>
+                                    <td>MAR</td>
+                                    <td>+212</td>
+                                </tr><tr>
+                                    <td><img src="img/Mexico.png"></td>
+                                    <td>Meksyk</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Meksyk</td>
+                                    <td>MXN</td>
+                                    <td>MEX</td>
+                                    <td>+52</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><img src="img/Germany.png"></td>
+                                    <td>Niemcy</td>
+                                    <td>Europa</td>
+                                    <td>Berlin</td>
+                                    <td>EUR</td>
+                                    <td>DEU</td>
+                                    <td>+49</td>
+                                </tr>
+                                 <tr>
+                                    <td><img src="img/Norway.png"></td>
+                                    <td>Norwegia</td>
+                                    <td>Europa</td>
+                                    <td>Oslo</td>
+                                    <td>NOK</td>
+                                    <td>NOR</td>
+                                    <td>+47</td>
+                                </tr><tr>
+                                    <td><img src="img/New_Zealand.png"></td>
+                                    <td>Nowa Zelandia</td>
+                                    <td>Australia i Oceania</td>
+                                    <td>Wellington</td>
+                                    <td>NZD</td>
+                                    <td>NZL</td>
+                                    <td>+64</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><img src="img/Panama.png"></td>
+                                    <td>Panama</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Panama</td>
+                                    <td>PAB</td>
+                                    <td>PAN</td>
+                                    <td>+507</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Peru.png"></td>
+                                    <td>Peru</td>
+                                    <td>Ameryka Południowa</td>
+                                    <td>Lima</td>
+                                    <td>PEN</td>
+                                    <td>PER</td>
+                                    <td>+51</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Poland.png"></td>
+                                    <td>Polska</td>
+                                    <td>Europa</td>
+                                    <td>Warszawa</td>
+                                    <td>PLN</td>
+                                    <td>POL</td>
+                                    <td>+48</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Samoa.png"></td>
+                                    <td>Samoa</td>
+                                    <td>Australia i Oceania</td>
+                                    <td>Apia</td>
+                                    <td>WST</td>
+                                    <td>WSM</td>
+                                    <td>+685</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Senegal.png"></td>
+                                    <td>Senegal</td>
+                                    <td>Afryka</td>
+                                    <td>Dakar</td>
+                                    <td>XOF</td>
+                                    <td>SEN</td>
+                                    <td>+221</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/United_States.png"></td>
+                                    <td>Stany Zjednoczone</td>
+                                    <td>Ameryka Północna</td>
+                                    <td>Waszyngton</td>
+                                    <td>USD</td>
+                                    <td>USA</td>
+                                    <td>+1</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Sudan.png"></td>
+                                    <td>Sudan</td>
+                                    <td>Afryka</td>
+                                    <td>Chartum</td>
+                                    <td>SDG</td>
+                                    <td>SDN</td>
+                                    <td>+249</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Sweden.png"></td>
+                                    <td>Szwecja</td>
+                                    <td>Europa</td>
+                                    <td>Sztokholm</td>
+                                    <td>SEK</td>
+                                    <td>SWE</td>
+                                    <td>+46</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/Thailand.png"></td>
+                                    <td>Tajlandia</td>
+                                    <td>Azja</td>
+                                    <td>Bangkok</td>
+                                    <td>THB</td>
+                                    <td>THA</td>
+                                    <td>+66</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/United_Kingdom.png"></td>
+                                    <td>Wielka Brytania</td>
+                                    <td>Europa</td>
+                                    <td>Londyn</td>
+                                    <td>GBP</td>
+                                    <td>GBR</td>
+                                    <td>+44</td>
+                                </tr>
+                            
+                        </tbody></table>
+                    </div>
+                   <div class="page-footer relative-footer">Strona 3 z 3</div>
+        </div>
+    </div>
+</body>
+</html>

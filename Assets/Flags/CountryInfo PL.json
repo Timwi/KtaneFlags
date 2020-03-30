@@ -1,0 +1,290 @@
+[
+	{
+		"NazwaKraju": "Algieria",
+		"Kontynent": "Afryka",
+		"Stolica": "Algier",
+		"Waluta": "DZD",
+		"KrajISO": "DZA",
+		"KrajKod": 213
+	},
+	{
+		"NazwaKraju": "Australia",
+		"Kontynent": "Australia i Oceania",
+		"Stolica": "Canberra",
+		"Waluta": "AUD",
+		"KrajISO": "AUS",
+		"KrajKod": 61
+	},
+	{
+		"NazwaKraju": "Austria",
+		"Kontynent": "Europa",
+		"Stolica": "Wiedeń",
+		"Waluta": "EUR",
+		"KrajISO": "AUT",
+		"KrajKod": 43
+	},
+	{
+		"NazwaKraju": "Belgia",
+		"Kontynent": "Europa",
+		"Stolica": "Bruksela",
+		"Waluta": "EUR",
+		"KrajISO": "BEL",
+		"KrajKod": 32
+	},
+	{
+		"NazwaKraju": "Brazylia",
+		"Kontynent": "Ameryka Południowa",
+		"Stolica": "Brasília",
+		"Waluta": "BRL",
+		"KrajISO": "BRA",
+		"KrajKod": 55
+	},
+	{
+		"NazwaKraju": "Kanada",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Ottawa",
+		"Waluta": "CAD",
+		"KrajISO": "CAN",
+		"KrajKod": 1
+	},
+	{
+		"NazwaKraju": "Chile",
+		"Kontynent": "Ameryka Południowa",
+		"Stolica": "Santiago",
+		"Waluta": "CLP",
+		"KrajISO": "CHL",
+		"KrajKod": 56
+	},
+	{
+		"NazwaKraju": "Chiny",
+		"Kontynent": "Azja",
+		"Stolica": "Pekin",
+		"Waluta": "CNY",
+		"KrajISO": "CHN",
+		"KrajKod": 86
+	},
+	{
+		"NazwaKraju": "Kolumbia",
+		"Kontynent": "Ameryka Południowa",
+		"Stolica": "Bogota",
+		"Waluta": "COP",
+		"KrajISO": "COL",
+		"KrajKod": 57
+	},
+	{
+		"NazwaKraju": "Kuba",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Hawana",
+		"Waluta": "CUP",
+		"KrajISO": "CUB",
+		"KrajKod": 53
+	},
+	{
+		"NazwaKraju": "Czechy",
+		"Kontynent": "Europa",
+		"Stolica": "Praga",
+		"Waluta": "CZK",
+		"KrajISO": "CZE",
+		"KrajKod": 420
+	},
+	{
+		"NazwaKraju": "Dania",
+		"Kontynent": "Europa",
+		"Stolica": "Kopenhaga",
+		"Waluta": "DKK",
+		"KrajISO": "DNK",
+		"KrajKod": 45
+	},
+	{
+		"NazwaKraju": "Finlandia",
+		"Kontynent": "Europa",
+		"Stolica": "Helsinki",
+		"Waluta": "EUR",
+		"KrajISO": "FIN",
+		"KrajKod": 358
+	},
+	{
+		"NazwaKraju": "Francja",
+		"Kontynent": "Europa",
+		"Stolica": "Paryż",
+		"Waluta": "EUR",
+		"KrajISO": "FRA",
+		"KrajKod": 33
+	},
+	{
+		"NazwaKraju": "Niemcy",
+		"Kontynent": "Europa",
+		"Stolica": "Berlin",
+		"Waluta": "EUR",
+		"KrajISO": "DEU",
+		"KrajKod": 49
+	},
+	{
+		"NazwaKraju": "Grenlandia",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Nuuk",
+		"Waluta": "DKK",
+		"KrajISO": "GRL",
+		"KrajKod": 299
+	},
+		{
+		"NazwaKraju": "Islandia",
+		"Kontynent": "Europa",
+		"Stolica": "Reykjavík",
+		"Waluta": "ISK",
+		"KrajISO": "ISL",
+		"KrajKod": 354
+	},
+	{
+		"NazwaKraju": "Indie",
+		"Kontynent": "Azja",
+		"Stolica": "Nowe Delhi",
+		"Waluta": "INR",
+		"KrajISO": "IND",
+		"KrajKod": 91
+	},
+	{
+		"NazwaKraju": "Japonia",
+		"Kontynent": "Azja",
+		"Stolica": "Tokio",
+		"Waluta": "JPY",
+		"KrajISO": "JPN",
+		"KrajKod": 81
+	},
+	{
+		"NazwaKraju": "Meksyk",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Meksyk",
+		"Waluta": "MXN",
+		"KrajISO": "MEX",
+		"KrajKod": 52
+	},
+	{
+		"NazwaKraju": "Maroko",
+		"Kontynent": "Afryka",
+		"Stolica": "Rabat",
+		"Waluta": "MAD",
+		"KrajISO": "MAR",
+		"KrajKod": 212
+	},
+	{
+		"NazwaKraju": "Holandia",
+		"Kontynent": "Europa",
+		"Stolica": "Amsterdam",
+		"Waluta": "EUR",
+		"KrajISO": "NLD",
+		"KrajKod": 31
+	},
+	{
+		"NazwaKraju": "Nowa Zelandia",
+		"Kontynent": "Australia i Oceania",
+		"Stolica": "Wellington",
+		"Waluta": "NZD",
+		"KrajISO": "NZL",
+		"KrajKod": 64
+	},
+	{
+		"NazwaKraju": "Norwegia",
+		"Kontynent": "Europa",
+		"Stolica": "Oslo",
+		"Waluta": "NOK",
+		"KrajISO": "NOR",
+		"KrajKod": 47
+	},
+	{
+		"NazwaKraju": "Panama",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Panama",
+		"Waluta": "PAB",
+		"KrajISO": "PAN",
+		"KrajKod": 507
+	},
+	{
+		"NazwaKraju": "Peru",
+		"Kontynent": "Ameryka Południowa",
+		"Stolica": "Lima",
+		"Waluta": "PEN",
+		"KrajISO": "PER",
+		"KrajKod": 51
+	},
+	{
+		"NazwaKraju": "Polska",
+		"Kontynent": "Europa",
+		"Stolica": "Warszawa",
+		"Waluta": "PLN",
+		"KrajISO": "POL",
+		"KrajKod": 48
+	},
+	{
+		"NazwaKraju": "Samoa",
+		"Kontynent": "Australia i Oceania",
+		"Stolica": "Apia",
+		"Waluta": "WST",
+		"KrajISO": "WSM",
+		"KrajKod": 685
+	},
+	{
+		"NazwaKraju": "Senegal",
+		"Kontynent": "Afryka",
+		"Stolica": "Dakar",
+		"Waluta": "XOF",
+		"KrajISO": "SEN",
+		"KrajKod": 221
+	},
+	{
+		"NazwaKraju": "Korea Południowa",
+		"Kontynent": "Azja",
+		"Stolica": "Seul",
+		"Waluta": "KRW",
+		"KrajISO": "KOR",
+		"KrajKod": 82
+	},
+	{
+		"NazwaKraju": "Hiszpania",
+		"Kontynent": "Europa",
+		"Stolica": "Madryt",
+		"Waluta": "EUR",
+		"KrajISO": "ESP",
+		"KrajKod": 34
+	},
+	{
+		"NazwaKraju": "Sudan",
+		"Kontynent": "Afryka",
+		"Stolica": "Chartum",
+		"Waluta": "SDG",
+		"KrajISO": "SDN",
+		"KrajKod": 249
+	},
+	{
+		"NazwaKraju": "Szwecja",
+		"Kontynent": "Europa",
+		"Stolica": "Sztokholm",
+		"Waluta": "SEK",
+		"KrajISO": "SWE",
+		"KrajKod": 46
+	},
+	{
+		"NazwaKraju": "Tajlandia",
+		"Kontynent": "Azja",
+		"Stolica": "Bangkok",
+		"Waluta": "THB",
+		"KrajISO": "THA",
+		"KrajKod": 66
+	},
+	{
+		"NazwaKraju": "Wielka Brytania",
+		"Kontynent": "Europa",
+		"Stolica": "Londyn",
+		"Waluta": "GBP",
+		"KrajISO": "GBR",
+		"KrajKod": 44
+	},
+	{
+		"NazwaKraju": "Stany Zjednoczone",
+		"Kontynent": "Ameryka Północna",
+		"Stolica": "Waszyngton",
+		"Waluta": "USD",
+		"KrajISO": "USA",
+		"KrajKod": 1
+	}
+]
